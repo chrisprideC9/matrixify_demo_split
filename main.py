@@ -33,7 +33,7 @@ def convert_df_to_csv(df):
     return df.to_csv(index=False).encode('utf-8')
 
 def main():
-    st.title("CSV Splitter Application")
+    st.title("Matrixift CSV Splitter")
     st.write("""
         Upload a CSV file, and this app will split it into multiple CSV files, each containing up to 10 data rows plus the header.
         The split files will be zipped into a single archive, with all CSVs inside a folder named `split_files`, for easy download.
